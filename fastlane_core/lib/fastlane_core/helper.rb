@@ -208,8 +208,7 @@ module FastlaneCore
     end
 
     def self.path_name_itmsp
-      # return ENV["FASTLANE_ITUNES_TRANSPORTER_FILE_NAME_ITMSP"] || "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx".gsub("x") do rand(16).to_s(16) end if !self.path_name_itmsp?
-      return "batata"
+      return ENV["FASTLANE_ITUNES_TRANSPORTER_FILE_NAME_ITMSP"] || "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx".gsub("x") do rand(16).to_s(16) end if !self.path_name_itmsp?
     end
 
     def self.user_defined_itms_path
